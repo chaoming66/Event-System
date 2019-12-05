@@ -31,10 +31,10 @@ public class MessageEntity : MonoBehaviour
     {
         _messageQueue = new Queue<string>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    protected virtual void Update()
     {
         HandleMessages();
-	}
+    }
 }
